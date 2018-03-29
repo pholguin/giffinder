@@ -44,7 +44,7 @@ $(document).ready(function() {
             function appendImageToBody(srcURL) {
                 // write a function that will append an <img> to the body with the
                 // URL provided in the parameters
-                $('body').append('<img src=' + srcURL + '>');
+                $("#divTagId").append('<img src=' + srcURL + '>');
             }
 
             function callGiphyAPIWithSearchTerm(searchTerm) {
@@ -62,5 +62,11 @@ $(document).ready(function() {
                 console.log("hi");
                 var searchTerm = $("input").val();
                 callGiphyAPIWithSearchTerm(searchTerm);
-            });
+});
+            function getRandom(response) {
+              Math.ceil(0);
+              Math.floor(10);
+              Math.floor(Math.random() * (10 - 0 + 1)) + 0;  
+              return Math.floor(Math.random() * Math.floor(response));
+}
 });
